@@ -1,3 +1,5 @@
+###  Easy Test
+
 1. Screenshot of R:(not attached) - Initial state before connecting VS Code to the R language server in codespaces - indicated by "R (not attached)" in the status bar.
 ![image](https://github.com/avinabneogy23/r-dev-env-test/blob/main/assets/easy_0.png)
 
