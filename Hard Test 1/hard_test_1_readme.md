@@ -12,7 +12,7 @@ mkdocs serve
 
 ### Changes suggested for issue 191
 
-This is the [issue](https://github.com/r-devel/r-dev-env/issues/191) which I took inspiration from and created this [Pull Request](https://github.com/r-devel/r-dev-env/pull/203)
+This pull request was inspired by [Issue #191](https://github.com/r-devel/r-dev-env/issues/191) and aims to improve the documentation formatting while adding search functionality to enhance usability. You can view the changes in detail through this [Pull Request](https://github.com/r-devel/r-dev-env/pull/203).
  
 The following are some of the changes I made with Screenshots:
 
