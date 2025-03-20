@@ -1,20 +1,20 @@
 ##  Medium Test
 
-#### Building R for a specific Revision number
+### Building R for a specific Revision number
 
 First, I verified the current R version in the container by launching R in the terminal after following the steps in [Building R](https://contributor.r-project.org/r-dev-env/tutorials/building_r/) and using 
 
 ```bash
 
-svn checkout -r 86123 https://svn.r-project.org/R/trunk/ $TOP_SRCDIR
-
 #to checkout the specific revision 86123
+
+svn checkout -r 86123 https://svn.r-project.org/R/trunk/ $TOP_SRCDIR
 ```
 Screenshot for R revision number 86123 
 
 ![image](https://github.com/avinabneogy23/r-dev-env-test/blob/main/assets/medium_0.png)
 
-#### bash script to build R from SVN Revision number
+### bash script to build R from SVN Revision number
 
 Next we have the script that takes a revision number as an argument and performs all the necessary steps to build R from that specific SVN revision:
 
@@ -57,7 +57,7 @@ Screenshot showing the bash script
 
 ![image](https://github.com/avinabneogy23/r-dev-env-test/blob/main/assets/medium_1.png)
 
-#### **How It Functions**
+### **How It Functions**
 
 1. The script is executed with a specific SVN revision as an argument:
 Example:
