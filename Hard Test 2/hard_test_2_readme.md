@@ -41,16 +41,8 @@ docker run -d --name r-dev-container \
   sleep infinity
 ```
 
-2. Configured the container:
-
-```bash
-docker exec r-dev-container bash -c "mkdir -p /workspaces/r-dev-env"
-docker exec r-dev-container bash -c "chown -R $(id -u):$(id -g) /workspaces/r-dev-env"
-docker exec r-dev-container bash -c "apt-get update && apt-get install -y git"
-```
-
-3. Modified devcontainer.json to use the local image:
-
+2. Modified devcontainer.json to use the local image:
+Updated the devcontainer.json file to use the local image instead of the remote one. Change the "image" field to "r-dev-env:local" and ensure correct "workspaceFolder" and "workspaceMount" specifications.
 ```json
 {
   "name": "R-Dev-Env",
@@ -60,7 +52,7 @@ docker exec r-dev-container bash -c "apt-get update && apt-get install -y git"
 }
 ```
 
-4. Created a DevPod workspace using the local image
+3. Created a DevPod workspace using the local image
 
 ![image](https://github.com/avinabneogy23/r-dev-env-test/blob/main/assets/hard_12.png)
 
@@ -76,3 +68,4 @@ hist(rnorm(1000))
 
 ![image](https://github.com/avinabneogy23/r-dev-env-test/blob/main/assets/hard_14.png)
 
+The solution addresses the core issue by pre-creating the required directory structure, setting proper permissions, and using a local image. This bypasses problems with the remote image while ensuring all necessary paths are in place for the R environment to function correctly.
