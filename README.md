@@ -1,6 +1,6 @@
 # Tests
 
-Find the tests to the tests here:
+Find the solutions to the tests here:
 
 - [Easy Test](https://github.com/avinabneogy23/r-dev-env-test/blob/main/Easy%20Test/easy_test_readme.md)
 
