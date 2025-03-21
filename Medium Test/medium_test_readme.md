@@ -10,7 +10,7 @@ First, I verified the current R version in the container by launching R in the t
 
 svn checkout -r 86123 https://svn.r-project.org/R/trunk/ $TOP_SRCDIR
 ```
-Screenshot for R revision number 86123 
+Screengrab for R revision number 86123 
 
 ![image](https://github.com/avinabneogy23/r-dev-env-test/blob/main/assets/medium_0.png)
 
@@ -53,7 +53,7 @@ make check
 echo "R built successfully for revision $REVISION."
 
 ```
-Screenshot showing the bash script 
+Screengrab showing the bash script 
 
 ![image](https://github.com/avinabneogy23/r-dev-env-test/blob/main/assets/medium_1.png)
 
@@ -65,7 +65,7 @@ Example:
 ```bash
 ./build_r.sh 86123
 ```
-Sequential screenshots from running the script for SVN revision number 86122
+Sequential screengrabs from running the script for SVN revision number 86122
 
 ![image](https://github.com/avinabneogy23/r-dev-env-test/blob/main/assets/medium_2.png)
 
